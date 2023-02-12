@@ -6,4 +6,3 @@ headers = {"user-agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.3
 res = requests.get(url, headers=headers)
 soup = BeautifulSoup(res.text, "html.parser")
 print(soup)
-
