@@ -20,7 +20,8 @@ querybox.execute("create table if not exists scraping_ebay(id int AUTO_INCREMENT
     "Note_From_Seller varchar(5000),"
     "Detail varchar(5000))")
 conn.commit()
-# i=1
+
+
 s = requests.session()
 for page in range(1,11):
     url = "https://www.ebay.com/b/Cell-Phones-Smartphones/9355/bn_320094?_pgn={}".format(page)
